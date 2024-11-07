@@ -33,7 +33,8 @@ def preprocess_text(text):
 
     # Remove stopwords and punctuation
     stop_words = set(stopwords.words('english'))
-    filtered_words = [word for word in words if word.lower() not in stop_words and word.isalnum()]
+    filtered_words = [word for word in words 
+    if word.lower() not in stop_words and word.isalnum()]
 
     # Stemming
     stemmer = PorterStemmer()
@@ -59,7 +60,9 @@ def generate_summary(text, num_sentences=3):
                     sentence_scores[sentence] += freq
 
     # Select top N sentences with highest scores
-    summary_sentences = sorted(sentence_scores, key=sentence_scores.get, reverse=True)[:num_sentences]
+    summary_sentences = sorted(sentence_scores, 
+    key=sentence_scores.get, 
+    reverse=True)[:num_sentences]
 
     return ' '.join(summary_sentences)
 
@@ -67,7 +70,8 @@ if __name__ == "__main__":
     input_text = """
     Natural language processing (NLP) is a subfield of artificial intelligence.
     It involves the development of algorithms and models that enact NLP.
-    NLP is used in various applications, including chatbots, language understanding, and language generation.
+    NLP is used in various applications, including chatbots, language 
+    understanding, and language generation.
     This program demonstrates a simple text summarization using NLP.
     """
 
