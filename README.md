@@ -1,5 +1,5 @@
-### NAME : THANJIYAPPAN K
-### REGISTER NO : 212222240108
+### NAME : Kavinraja D
+### REGISTER NO : 212222240047
 ### DATE:
 <H3>EX. NO.7</H3><H1 ALIGN =CENTER>Implementation of Text  Summarization</H1>
 
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     print(summary)
 ```
 ## Output :
-![image](https://github.com/user-attachments/assets/2df813dd-e226-4127-9729-4eec42bcc7ae)
+![image](./Output/o1.png)
 
 ## Result:
 Thus ,the program to perform the Text summarization is executed sucessfully.
